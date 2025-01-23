@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sideNavigation">
+        <div class="menu">
+            <div class="circle"><i class="fa-solid fa-bars" style="color: #fff; font-size: large; display: inline-block;"></i></div>
+        </div>
+
+        <div class="newchat"> 
+           <button class="chtbtn"><i class="fa-solid fa-plus" style="font-size: large;"></i><span> New Chat</span></button>
+        </div>
+
+
+        <h5 class="recentHead">Recent</h5>
+        <div class="recent">
+          
+            <ul>
+                
+            </ul>
+        </div>
+
+        <div class="action">
+            <button class="helpbtn"><i class="fa-solid fa-circle-question help"></i><span>Help</span></button>
+            <button class="activitybtn"><i class="fa-solid fa-clock-rotate-left activity"></i><span>Activity</span></button>
+            <button class="settingbtn"><i class="fa-solid fa-gear setting"></i><span>Setting</span> </button>
+        </div>
+    </div>          <!--Side navigation ends here-->
+
+    <div class="chatArea"> <!--main chat area div starts here-->
+
+        <div class="hellomsg">
+            <h1 class="greet">Hello,Vandan</h1>
+        </div>
+
+        <div class="result">
+          
+        </div>
+
+       
+
+        <div class="message">
+           <input type="text" class="msginp" placeholder="Ask me...">
+           <div class="icons">
+                <i class="fa-regular fa-image"></i>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-paper-plane send" style="display: none;"></i>
+           </div>
+        </div>      <!--message input area ends here-->
+
+        <div class="privacy">
+            <p>Gemini can make mistakes. Please check important information.</p>
+        </div>
+
+    </div>          <!--Main chat area div ends here-->
+    </div>          <!--Main container ends here-->
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+<!--For JS use-->

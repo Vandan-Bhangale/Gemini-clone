@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    background-color: black;
+    display: flex;
+    color: white;
+}
+.sideNavigation {
+    /* background-color: rgb(86, 84, 84); */
+    background-color: #282a2c;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+}
+.expandClose{
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.expandClose .circle {
+    margin-left: 0;
+}
+.expandClose .chtbtn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.expandClose .chtbtn span {
+    display: none;
+}
+.expandClose .newchat {
+    margin-left: 0px;
+    border: none;
+}
+.expandClose .recent {
+    display: none;
+}
+.expandClose .action {
+   left: -10px;
+}
+.expandClose .action span {
+    display: none;
+}
+.expandClose .helpbtn, 
+.expandClose .activitybtn,
+.expandClose .settingbtn {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 5px
+}
+.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(59, 58, 58, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+.menu {
+    margin: 15px 0px 40px 0px;
+    cursor: pointer;
+}
+.newchat {
+    margin: 0px 0px 30px 0px;
+    margin-left: 30px;
+}
+.recent {
+    height: 40vh; /* Set the height */
+    width: 18vw; /* Set the width */
+    margin-left: 30px; /* Positioning */
+    display: block; /* Ensure it remains a block element */
+    overflow-y: auto; /* Add scrolling if content overflows vertically */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    padding: 10px; /* Add some padding inside the container */
+    box-sizing: border-box; /* Include padding and border in width/height */
+
+    /* Hide the scrollbar */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+.action {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    bottom: 50px;
+    color: white;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.helpbtn {
+    width: 245px;
+    height: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(59, 58, 58, 0);
+    color: white;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+}
+.helpbtn:hover {
+    background-color: rgba(59, 58, 58, 0.5);
+}
+.activitybtn {
+    width: 245px;
+    height: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(59, 58, 58, 0);
+    color: white;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+}
+.activitybtn:hover{
+    background-color: rgba(59, 58, 58, 0.5);
+}
+.settingbtn {
+    width: 245px;
+    height: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(59, 58, 58, 0);
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.settingbtn:hover {
+    background-color: rgba(59, 58, 58, 0.5);
+}
+.chtbtn {
+    width: 110px;
+    height: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(59, 58, 58, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.greet {
+    background: linear-gradient(45deg,rgb(76, 76, 241),rgb(237, 99, 122));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+}
+h5 {
+    font-size: large;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    display: block;
+}
+.recent li {
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    white-space: nowrap;
+    width: 15vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 10px;
+}
+.recent li:hover {
+    background-color: rgba(59, 58, 58, 0.5);
+    opacity: 1;
+}
+
+
+.message {
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+}
+.msginp {
+    width: 50vw;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #1b1c1d;
+    color: white;
+    font-size: medium;
+}
+.icons {
+    position: absolute;
+    right: 10px;
+    color: rgb(255, 255, 255,0.5);
+    text-align: center;
+    bottom: 14px;
+}
+.icons i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.privacy {
+    margin-top: 30px;
+    position: fixed;
+    bottom: 10px;
+}
+.send {
+    display: none;
+}
+.resultTitle {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.resultTitle p {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+.resImg {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%; 
+}
+.loader {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: load 3s infinite;
+    margin-top: 10px;
+}
+@keyframes load {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.textLoad {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.line {
+    border: none;
+    border-radius: 4px;
+    animation: loading 2s infinite linear;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #4285f4,#fff,#4285f4);
+    height: 15px;
+}
+.line:nth-child(3) {
+    width: 70%;
+}
+
+@keyframes loading {
+    0% {background-position: -800px 0;};
+    100%{background-position: 800px 0;}
+}
+.chatArea {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #1b1c1d;
+}
+.result {
+    height: 60vh;
+    width: 70%;
+    color: white;
+    padding: 10px;
+    line-height: 1.5;
+    overflow: auto;
+
+     /* Hide the scrollbar */
+     scrollbar-width: none; /* For Firefox */
+     -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* For WebKit-based browsers */
+.result::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+#resContent {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+strong {
+    color: #2a9df4; /* Change text color */
+    font-weight: bold; /* Keep boldness */
+    font-size: 1.2em; /* Increase font size */
+    text-decoration: underline; /* Add underline */
+    padding: 2px 4px; /* Add padding for spacing */
+    border-radius: 4px; /* Add rounded corners */
+}
