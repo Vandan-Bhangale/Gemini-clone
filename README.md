@@ -27,7 +27,7 @@ A web-based application inspired by Gemini that allows users to interact with a 
    ```bash
    git clone https://github.com/Vandan-Bhangale/gemini-clone.git
    ```
-2. Open `https://vandan-bhangale.github.io/Gemini-clone/` in your browser to view the application.
+2. Open https://vandan-bhangale.github.io/Gemini-clone/ in your browser to view the application.
 
 ---
 
