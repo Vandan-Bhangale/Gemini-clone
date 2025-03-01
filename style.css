@@ -12,6 +12,7 @@
 .sideNavigation {
     /* background-color: rgb(86, 84, 84); */
     background-color: #282a2c;
+    float: left;
     width: 20vw;
     height: 100vh;
     display: flex;
@@ -347,4 +348,40 @@ strong {
     text-decoration: underline; /* Add underline */
     padding: 2px 4px; /* Add padding for spacing */
     border-radius: 4px; /* Add rounded corners */
+}
+@media screen and (max-width:1024px) {
+    .action {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:768px) {
+    .expandClose {
+        width: 10vw;
+    }
+    .action {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:455px) {
+    .expandClose {
+        width: 15vw;
+    }
+    .action {
+        margin-left: 20px;
+    }
+    .msginp  {
+        width: 70vw;
+        height: 40px;
+    }
+    .icons {
+        bottom: 10px;
+    }
+    .privacy {
+        width: 50%;
+        font-size: 12px;
+    }
+    #resContent {
+        font-size: 13px;
+        margin-left: 15px;
+    }
 }
